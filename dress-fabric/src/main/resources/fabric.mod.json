@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dress",
+  "version": "${version}",
+
+  "name": "Dress",
+  "description": "Dress is a plugin engine for fabric",
+  "authors": [
+    "myoun"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "app.myoun.dress.fabric.FabricDressMod"
+      }
+    ]
+  },
+  "mixins": [
+    "dress.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17",
+    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0",
+    "fabric-permissions-api-v0": "*"
+  }
+}
